@@ -1,0 +1,153 @@
+body {
+    padding: 0;
+    margin: 0;
+    background: linear-gradient(to right, #4a90e2, #145d99);
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    width: 40%;
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.inputBox {
+    width: 65%;
+    padding: 12px;
+    background: #f0f0f0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+}
+
+.btnSearch {
+    color: #ffffff;
+    padding: 12px 20px;
+    background: #ff5722;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.btnSearch:hover {
+    background: #e64a19;
+}
+
+.titleCard {
+    padding: 15px;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.title {
+    text-align: center;
+    color: #ffffff;
+    font-size: 36px;
+    font-weight: bold;
+    margin: 0;
+}
+
+.title span {
+    color: #ffeb3b;
+}
+
+.desc {
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 16px;
+    margin-top: 10px;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+.output {
+    visibility: hidden;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: visibility 0.5s, opacity 0.5s ease-in-out;
+    opacity: 0;
+}
+
+.output.visible {
+    visibility: visible;
+    opacity: 1;
+}
+
+.tempCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#temp {
+    margin: 0;
+    font-size: 64px;
+}
+
+#sup {
+    color: #fff;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+#loc-time {
+    font-style: italic;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-top: 10px;
+}
+
+.cityNameCard {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+#city-name {
+    font-size: 18px;
+    color: #ffffff;
+    padding: 10px;
+}
+
+#countryName {
+    background: #ff9800;
+    font-size: 14px;
+    padding: 6px 12px;
+    border-radius: 10px;
+    text-align: center;
+    margin-left: 10px;
+}
